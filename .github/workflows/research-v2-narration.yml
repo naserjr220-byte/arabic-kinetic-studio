@@ -1,18 +1,23 @@
-name: Retrieve approved research narration
+name: Transfer narration for editing (manual)
 on:
-  push:
-    branches: [production/research-title-v2]
   workflow_dispatch:
+    inputs:
+      narration_url:
+        description: 'Temporary download URL for an approved narration asset'
+        required: true
+        type: string
 permissions:
   contents: read
 jobs:
   audio:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch the generated narration only
+      - name: Transfer approved narration
+        env:
+          NARRATION_URL: ${{ inputs.narration_url }}
         run: |
           mkdir -p out
-          curl -fL --retry 3 'https://elevenlabsusercontent.com/database/workspace/8abde8eca8c74e92878ee3e15d671bd4/content_generation/TVpVyf7VxFqGdWz2HM2Y/v8cK87CPQU4ZlTnU5hpX/content.mp3?Expires=1795532400&KeyName=assets-cdn-key-1&Signature=zwhWJYd6j_k_7OnpfM8KyNUjTjc=' -o out/narration.mp3
+          curl -fL --retry 3 "$NARRATION_URL" -o out/narration.mp3
           test -s out/narration.mp3
           sha256sum out/narration.mp3 > out/audio-sha256.txt
       - uses: actions/upload-artifact@v4
