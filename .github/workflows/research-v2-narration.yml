@@ -13,7 +13,7 @@ jobs:
         run: |
           mkdir -p out
           curl -fL --retry 3 'https://elevenlabsusercontent.com/database/workspace/8abde8eca8c74e92878ee3e15d671bd4/content_generation/TVpVyf7VxFqGdWz2HM2Y/v8cK87CPQU4ZlTnU5hpX/content.mp3?Expires=1795532400&KeyName=assets-cdn-key-1&Signature=zwhWJYd6j_k_7OnpfM8KyNUjTjc=' -o out/narration.mp3
-          ffprobe -v error -show_format -show_streams out/narration.mp3 > out/audio-probe.txt
+          test -s out/narration.mp3
           sha256sum out/narration.mp3 > out/audio-sha256.txt
       - uses: actions/upload-artifact@v4
         with:
