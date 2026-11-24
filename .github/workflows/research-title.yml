@@ -1,0 +1,46 @@
+name: Research Title Arabic Kinetic Video
+on:
+  workflow_dispatch:
+  push:
+    branches: [production/research-title-30s]
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install media tools
+        run: |
+          if ! command -v ffmpeg || ! command -v ffprobe; then sudo apt-get update && sudo apt-get install -y ffmpeg; fi
+          pip install edge-tts==7.3.1
+      - name: Load Arabic fonts
+        run: |
+          mkdir -p public/fonts/NotoSansArabic public/fonts/NotoNaskhArabic
+          curl -fL --retry 3 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansarabic/NotoSansArabic%5Bwdth%2Cwght%5D.ttf' -o 'public/fonts/NotoSansArabic/NotoSansArabic[wdth,wght].ttf'
+          curl -fL --retry 3 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf' -o 'public/fonts/NotoNaskhArabic/NotoNaskhArabic[wght].ttf'
+      - name: Generate narration and real WordBoundary timeline
+        run: python scripts/research_title.py
+      - run: npm install
+      - name: Type-check research composition
+        run: npx tsc --noEmit
+      - name: Render research MP4
+        run: npx remotion render src/research/index.tsx ResearchTitle30 out/research/final-video.mp4 --concurrency=2
+      - name: Validate decoded video and audio
+        run: python scripts/research_validate.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: research-title-30s-${{ github.run_number }}
+          path: |
+            out/research/
+            public/research/
+            src/research/timeline.json
+            research/script.json
+          if-no-files-found: error
