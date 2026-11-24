@@ -1,0 +1,147 @@
+{
+  "wordCount": 38,
+  "source": "Original v7 Edge TTS WordBoundary",
+  "narrationSha256": "3d0889f3d1210cb3f914e91e6375282fdc9621985c14d149ba266c69a4ec2bc9",
+  "semanticEvents": [
+    {
+      "id": "swap-to-embroidered-at-03s",
+      "wordIndex": 7,
+      "frame": 70,
+      "type": "image"
+    },
+    {
+      "id": "s1-arrow-to-abaya",
+      "wordIndex": 4,
+      "frame": 41,
+      "type": "sticker"
+    },
+    {
+      "id": "s1-exclamation",
+      "wordIndex": 7,
+      "frame": 70,
+      "type": "sticker"
+    },
+    {
+      "id": "s1-pop-title",
+      "wordIndex": 1,
+      "frame": 3,
+      "type": "sfx"
+    },
+    {
+      "id": "s1-arrow-whoosh",
+      "wordIndex": 4,
+      "frame": 41,
+      "type": "sfx"
+    },
+    {
+      "id": "s1-cut-pop",
+      "wordIndex": 7,
+      "frame": 70,
+      "type": "sfx"
+    },
+    {
+      "id": "swap-to-black-brocade-at-05s",
+      "wordIndex": 11,
+      "frame": 145,
+      "type": "image"
+    },
+    {
+      "id": "swap-to-embroidered-at-06s",
+      "wordIndex": 14,
+      "frame": 171,
+      "type": "image"
+    },
+    {
+      "id": "s2-dotted-curved-arrow",
+      "wordIndex": 11,
+      "frame": 145,
+      "type": "sticker"
+    },
+    {
+      "id": "s2-brocade-pop",
+      "wordIndex": 11,
+      "frame": 145,
+      "type": "sfx"
+    },
+    {
+      "id": "s2-embroidered-whoosh",
+      "wordIndex": 14,
+      "frame": 171,
+      "type": "sfx"
+    },
+    {
+      "id": "s3-eyes",
+      "wordIndex": 20,
+      "frame": 261,
+      "type": "sticker"
+    },
+    {
+      "id": "s3-eyes-pop",
+      "wordIndex": 20,
+      "frame": 261,
+      "type": "sfx"
+    },
+    {
+      "id": "s4-quality-pop",
+      "wordIndex": 28,
+      "frame": 427,
+      "type": "sticker"
+    },
+    {
+      "id": "s4-dafiya-pop",
+      "wordIndex": 23,
+      "frame": 334,
+      "type": "sfx"
+    },
+    {
+      "id": "s4-satira-pop",
+      "wordIndex": 25,
+      "frame": 370,
+      "type": "sfx"
+    },
+    {
+      "id": "s4-fafdafa-pop",
+      "wordIndex": 27,
+      "frame": 406,
+      "type": "sfx"
+    },
+    {
+      "id": "s4-wasia-pop",
+      "wordIndex": 28,
+      "frame": 427,
+      "type": "sfx"
+    },
+    {
+      "id": "swap-to-sheer-embroidered-at-17s",
+      "wordIndex": 31,
+      "frame": 514,
+      "type": "image"
+    },
+    {
+      "id": "s5-double-exclamation",
+      "wordIndex": 31,
+      "frame": 514,
+      "type": "sticker"
+    },
+    {
+      "id": "s5-sheer-cut",
+      "wordIndex": 31,
+      "frame": 514,
+      "type": "sfx"
+    },
+    {
+      "id": "s6-final-rays",
+      "wordIndex": 38,
+      "frame": 636,
+      "type": "sticker"
+    },
+    {
+      "id": "s6-final-pop",
+      "wordIndex": 38,
+      "frame": 636,
+      "type": "sfx"
+    }
+  ],
+  "maximumEntryDelayMs": 32.699999999999285,
+  "visualCoverageFrames": 670
+}

@@ -1,0 +1,351 @@
+{
+  "voice": "ar-SA-HamedNeural",
+  "rate": "-6%",
+  "fps": 30,
+  "durationFrames": 670,
+  "durationSeconds": 22.333333,
+  "words": [
+    {
+      "index": 1,
+      "text": "العباءة",
+      "segmentId": "scene-01",
+      "startSeconds": 0.0805,
+      "endSeconds": 0.6612,
+      "startFrame": 2,
+      "endFrame": 20
+    },
+    {
+      "index": 2,
+      "text": "إنما",
+      "segmentId": "scene-01",
+      "startSeconds": 0.6716,
+      "endSeconds": 0.9827,
+      "startFrame": 20,
+      "endFrame": 29
+    },
+    {
+      "index": 3,
+      "text": "جعلت",
+      "segmentId": "scene-01",
+      "startSeconds": 0.9931,
+      "endSeconds": 1.356,
+      "startFrame": 30,
+      "endFrame": 41
+    },
+    {
+      "index": 4,
+      "text": "للستر",
+      "segmentId": "scene-01",
+      "startSeconds": 1.3664,
+      "endSeconds": 1.7501,
+      "startFrame": 41,
+      "endFrame": 53
+    },
+    {
+      "index": 5,
+      "text": "ولم",
+      "segmentId": "scene-01",
+      "startSeconds": 1.7605,
+      "endSeconds": 1.9783,
+      "startFrame": 53,
+      "endFrame": 59
+    },
+    {
+      "index": 6,
+      "text": "تجعل",
+      "segmentId": "scene-01",
+      "startSeconds": 1.9886,
+      "endSeconds": 2.2997,
+      "startFrame": 60,
+      "endFrame": 69
+    },
+    {
+      "index": 7,
+      "text": "للزينة",
+      "segmentId": "scene-01",
+      "startSeconds": 2.3101,
+      "endSeconds": 2.7768,
+      "startFrame": 69,
+      "endFrame": 83
+    },
+    {
+      "index": 8,
+      "text": "لا",
+      "segmentId": "scene-02",
+      "startSeconds": 4.0673,
+      "endSeconds": 4.2233,
+      "startFrame": 122,
+      "endFrame": 127
+    },
+    {
+      "index": 9,
+      "text": "يكون",
+      "segmentId": "scene-02",
+      "startSeconds": 4.2319,
+      "endSeconds": 4.5353,
+      "startFrame": 127,
+      "endFrame": 136
+    },
+    {
+      "index": 10,
+      "text": "فيها",
+      "segmentId": "scene-02",
+      "startSeconds": 4.544,
+      "endSeconds": 4.7953,
+      "startFrame": 136,
+      "endFrame": 144
+    },
+    {
+      "index": 11,
+      "text": "زركشة",
+      "segmentId": "scene-02",
+      "startSeconds": 4.804,
+      "endSeconds": 5.2547,
+      "startFrame": 144,
+      "endFrame": 158
+    },
+    {
+      "index": 12,
+      "text": "ولا",
+      "segmentId": "scene-02",
+      "startSeconds": 5.2633,
+      "endSeconds": 5.428,
+      "startFrame": 158,
+      "endFrame": 163
+    },
+    {
+      "index": 13,
+      "text": "فيها",
+      "segmentId": "scene-02",
+      "startSeconds": 5.4367,
+      "endSeconds": 5.688,
+      "startFrame": 163,
+      "endFrame": 171
+    },
+    {
+      "index": 14,
+      "text": "تطريز",
+      "segmentId": "scene-02",
+      "startSeconds": 5.6967,
+      "endSeconds": 6.1907,
+      "startFrame": 171,
+      "endFrame": 186
+    },
+    {
+      "index": 15,
+      "text": "وإنما",
+      "segmentId": "scene-03",
+      "startSeconds": 7.0725,
+      "endSeconds": 7.4931,
+      "startFrame": 212,
+      "endFrame": 225
+    },
+    {
+      "index": 16,
+      "text": "تكون",
+      "segmentId": "scene-03",
+      "startSeconds": 7.5024,
+      "endSeconds": 7.8202,
+      "startFrame": 225,
+      "endFrame": 235
+    },
+    {
+      "index": 17,
+      "text": "سادة",
+      "segmentId": "scene-03",
+      "startSeconds": 7.8296,
+      "endSeconds": 8.2221,
+      "startFrame": 235,
+      "endFrame": 247
+    },
+    {
+      "index": 18,
+      "text": "لا",
+      "segmentId": "scene-03",
+      "startSeconds": 8.2314,
+      "endSeconds": 8.3436,
+      "startFrame": 247,
+      "endFrame": 250
+    },
+    {
+      "index": 19,
+      "text": "تلفت",
+      "segmentId": "scene-03",
+      "startSeconds": 8.3529,
+      "endSeconds": 8.6707,
+      "startFrame": 251,
+      "endFrame": 260
+    },
+    {
+      "index": 20,
+      "text": "النظر",
+      "segmentId": "scene-03",
+      "startSeconds": 8.68,
+      "endSeconds": 9.138,
+      "startFrame": 260,
+      "endFrame": 274
+    },
+    {
+      "index": 21,
+      "text": "وتكون",
+      "segmentId": "scene-04",
+      "startSeconds": 10.0959,
+      "endSeconds": 10.7016,
+      "startFrame": 303,
+      "endFrame": 321
+    },
+    {
+      "index": 22,
+      "text": "أيضاً",
+      "segmentId": "scene-04",
+      "startSeconds": 10.7139,
+      "endSeconds": 11.0971,
+      "startFrame": 321,
+      "endFrame": 333
+    },
+    {
+      "index": 23,
+      "text": "ضافية",
+      "segmentId": "scene-04",
+      "startSeconds": 11.1095,
+      "endSeconds": 11.678,
+      "startFrame": 333,
+      "endFrame": 350
+    },
+    {
+      "index": 24,
+      "text": "تكون",
+      "segmentId": "scene-04",
+      "startSeconds": 11.8881,
+      "endSeconds": 12.3207,
+      "startFrame": 357,
+      "endFrame": 370
+    },
+    {
+      "index": 25,
+      "text": "ساترة",
+      "segmentId": "scene-04",
+      "startSeconds": 12.3331,
+      "endSeconds": 12.9635,
+      "startFrame": 370,
+      "endFrame": 389
+    },
+    {
+      "index": 26,
+      "text": "وتكون",
+      "segmentId": "scene-04",
+      "startSeconds": 12.9758,
+      "endSeconds": 13.5073,
+      "startFrame": 389,
+      "endFrame": 405
+    },
+    {
+      "index": 27,
+      "text": "فضفاضة",
+      "segmentId": "scene-04",
+      "startSeconds": 13.5197,
+      "endSeconds": 14.1995,
+      "startFrame": 406,
+      "endFrame": 426
+    },
+    {
+      "index": 28,
+      "text": "وواسعة",
+      "segmentId": "scene-04",
+      "startSeconds": 14.2119,
+      "endSeconds": 14.9164,
+      "startFrame": 426,
+      "endFrame": 447
+    },
+    {
+      "index": 29,
+      "text": "ليست",
+      "segmentId": "scene-05",
+      "startSeconds": 16.0847,
+      "endSeconds": 16.5209,
+      "startFrame": 483,
+      "endFrame": 496
+    },
+    {
+      "index": 30,
+      "text": "عباءة",
+      "segmentId": "scene-05",
+      "startSeconds": 16.5318,
+      "endSeconds": 17.1208,
+      "startFrame": 496,
+      "endFrame": 514
+    },
+    {
+      "index": 31,
+      "text": "شفافة",
+      "segmentId": "scene-05",
+      "startSeconds": 17.1317,
+      "endSeconds": 17.7425,
+      "startFrame": 514,
+      "endFrame": 532
+    },
+    {
+      "index": 32,
+      "text": "واسمها",
+      "segmentId": "scene-06",
+      "startSeconds": 19.0689,
+      "endSeconds": 19.4685,
+      "startFrame": 572,
+      "endFrame": 584
+    },
+    {
+      "index": 33,
+      "text": "عباءة",
+      "segmentId": "scene-06",
+      "startSeconds": 19.4773,
+      "endSeconds": 19.948,
+      "startFrame": 584,
+      "endFrame": 598
+    },
+    {
+      "index": 34,
+      "text": "وهي",
+      "segmentId": "scene-06",
+      "startSeconds": 19.9568,
+      "endSeconds": 20.1966,
+      "startFrame": 599,
+      "endFrame": 606
+    },
+    {
+      "index": 35,
+      "text": "لا",
+      "segmentId": "scene-06",
+      "startSeconds": 20.2055,
+      "endSeconds": 20.3032,
+      "startFrame": 606,
+      "endFrame": 609
+    },
+    {
+      "index": 36,
+      "text": "تستر",
+      "segmentId": "scene-06",
+      "startSeconds": 20.312,
+      "endSeconds": 20.7205,
+      "startFrame": 609,
+      "endFrame": 622
+    },
+    {
+      "index": 37,
+      "text": "هذا",
+      "segmentId": "scene-06",
+      "startSeconds": 20.8892,
+      "endSeconds": 21.1645,
+      "startFrame": 627,
+      "endFrame": 635
+    },
+    {
+      "index": 38,
+      "text": "تلاعب",
+      "segmentId": "scene-06",
+      "startSeconds": 21.1733,
+      "endSeconds": 21.7061,
+      "startFrame": 635,
+      "endFrame": 651
+    }
+  ]
+}

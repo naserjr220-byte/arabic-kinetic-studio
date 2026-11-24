@@ -1,0 +1,70 @@
+name: Render Arabic Kinetic Studio
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+concurrency:
+  group: studio-main
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install system tools
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-color-emoji
+      - name: Restore approved source WAV if not yet materialized
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -s public/audio/narration.wav ]; then
+            curl -fL --retry 3 'https://raw.githubusercontent.com/gamal20062010-del/motion-demo-cloud/19f89ac3313fc0566f3578f3bd1695b18fb5464c/Arabic-Kinetic-Video-v2/public/audio/narration.wav' -o public/audio/narration.wav
+          fi
+          echo '3d0889f3d1210cb3f914e91e6375282fdc9621985c14d149ba266c69a4ec2bc9  public/audio/narration.wav' | sha256sum -c -
+      - name: Obtain Arabic fonts and licenses
+        run: |
+          mkdir -p public/fonts/NotoSansArabic public/fonts/NotoNaskhArabic
+          curl -fL --retry 3 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansarabic/NotoSansArabic%5Bwdth%2Cwght%5D.ttf' -o 'public/fonts/NotoSansArabic/NotoSansArabic[wdth,wght].ttf'
+          curl -fL --retry 3 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf' -o 'public/fonts/NotoNaskhArabic/NotoNaskhArabic[wght].ttf'
+          curl -fL --retry 3 'https://raw.githubusercontent.com/google/fonts/main/ofl/notosansarabic/OFL.txt' -o public/fonts/NotoSansArabic/OFL.txt
+          curl -fL --retry 3 'https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/OFL.txt' -o public/fonts/NotoNaskhArabic/OFL.txt
+      - run: npm install
+      - run: npm run typecheck
+      - name: Mix synchronized effects
+        run: npm run mix
+      - run: npm run check
+      - run: npm run render
+      - run: npm run validate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arabic-kinetic-studio-${{ github.run_number }}
+          path: |
+            out/
+            reference/sync-report.json
+            src/data/timeline.json
+            public/audio/narration-word-timings.json
+            public/audio/narration.wav
+            public/audio/mixed_narration.wav
+            public/audio/sfx/*.wav
+            public/images/*.png
+          if-no-files-found: error
+      - name: Persist approved audio in this repository
+        if: github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/audio/narration.wav public/audio/mixed_narration.wav
+          if ! git diff --cached --quiet; then
+            git commit -m 'ci: materialize verified narration and synchronized mix [skip ci]'
+            git push origin HEAD:main
+          fi

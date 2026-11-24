@@ -1,0 +1,2219 @@
+{
+  "project": {
+    "name": "arabic-abaya-kinetic-typography",
+    "version": 2,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationFrames": 670,
+    "durationSeconds": 22.333333333333332,
+    "frameInterval": "[startFrame, endFrame)",
+    "background": {
+      "type": "solid",
+      "color": "$palette.background",
+      "isStatic": true
+    },
+    "palette": {
+      "background": "#FADAD8",
+      "primaryText": "#171717",
+      "secondaryText": "#171717",
+      "accent": "#C94F76",
+      "sticker": "#C94F76",
+      "onElementText": "#FFFFFF"
+    },
+    "paletteReferenceSyntax": "Color values beginning with $palette. reference a named project.palette entry.",
+    "watermark": {
+      "enabled": false,
+      "text": null
+    }
+  },
+  "fonts": {
+    "primary": {
+      "family": "Noto Sans Arabic",
+      "role": "bold-kinetic-words",
+      "weight": 800,
+      "style": "normal"
+    },
+    "secondary": {
+      "family": "Noto Naskh Arabic",
+      "role": "contrasting-editorial-phrases",
+      "weight": 700,
+      "style": "normal"
+    },
+    "arabicText": {
+      "direction": "rtl",
+      "textAlign": "center",
+      "kashida": {
+        "enabled": true,
+        "mode": "manual-per-word"
+      }
+    }
+  },
+  "audio": {
+    "narration": {
+      "src": "audio/narration.wav",
+      "text": "العباءة إنما جعلت للستر ولم تجعل للزينة، لا يكون فيها زركشة ولا فيها تطريز، وإنما تكون سادة لا تلفت النظر، وتكون أيضاً ضافية، تكون ساترة وتكون فضفاضة وواسعة، ليست عباءة شفافة واسمها عباءة وهي لا تستر، هذا تلاعب.",
+      "voice": "ar-SA-HamedNeural",
+      "volume": 1,
+      "startFrame": 0,
+      "endFrame": 670,
+      "timingSource": "Edge TTS WordBoundary metadata; offsets converted from 100-ns ticks",
+      "rate": "-6%",
+      "actualDurationSeconds": 22.333333,
+      "wordCount": 38,
+      "segments": [
+        {
+          "id": "scene-01",
+          "text": "العباءة إنما جعلت للستر ولم تجعل للزينة،",
+          "startFrame": 0,
+          "endFrame": 105,
+          "rawTtsDurationSeconds": 4.488,
+          "renderedSpeechDurationSeconds": 3.4851,
+          "tempoFactor": 1.28229,
+          "wordCount": 7
+        },
+        {
+          "id": "scene-02",
+          "text": "لا يكون فيها زركشة ولا فيها تطريز،",
+          "startFrame": 120,
+          "endFrame": 204,
+          "rawTtsDurationSeconds": 4.296,
+          "renderedSpeechDurationSeconds": 2.7929,
+          "tempoFactor": 1.53429,
+          "wordCount": 7
+        },
+        {
+          "id": "scene-03",
+          "text": "وإنما تكون سادة لا تلفت النظر،",
+          "startFrame": 210,
+          "endFrame": 294,
+          "rawTtsDurationSeconds": 3.984,
+          "renderedSpeechDurationSeconds": 2.79,
+          "tempoFactor": 1.42286,
+          "wordCount": 6
+        },
+        {
+          "id": "scene-04",
+          "text": "وتكون أيضاً ضافية، تكون ساترة وتكون فضفاضة وواسعة،",
+          "startFrame": 300,
+          "endFrame": 474,
+          "rawTtsDurationSeconds": 6.24,
+          "renderedSpeechDurationSeconds": 5.7801,
+          "tempoFactor": 1.07586,
+          "wordCount": 8
+        },
+        {
+          "id": "scene-05",
+          "text": "ليست عباءة شفافة",
+          "startFrame": 480,
+          "endFrame": 555,
+          "rawTtsDurationSeconds": 3.048,
+          "renderedSpeechDurationSeconds": 2.4842,
+          "tempoFactor": 1.2192,
+          "wordCount": 3
+        },
+        {
+          "id": "scene-06",
+          "text": "واسمها عباءة وهي لا تستر، هذا تلاعب.",
+          "startFrame": 570,
+          "endFrame": 670,
+          "rawTtsDurationSeconds": 4.992,
+          "renderedSpeechDurationSeconds": 3.3253,
+          "tempoFactor": 1.4976,
+          "wordCount": 7
+        }
+      ]
+    },
+    "renderedMixSrc": "audio/mixed_narration.wav",
+    "wordTimingsSrc": "audio/narration-word-timings.json",
+    "sfxMix": {
+      "relativeToNarration": true,
+      "targetGain": 0.2,
+      "allowedRange": [
+        0.15,
+        0.25
+      ],
+      "duckNarration": false,
+      "noMusic": true
+    }
+  },
+  "assets": {
+    "mainElementFrames": [
+      "images/element-01.png",
+      "images/element-02.png",
+      "images/element-03.png",
+      "images/element-04.png"
+    ],
+    "sfx": {
+      "pop": "audio/sfx/pop.wav",
+      "whoosh": "audio/sfx/whoosh.wav"
+    },
+    "fontsDirectory": "fonts/"
+  },
+  "layoutDefaults": {
+    "coordinateUnit": "px",
+    "origin": "top-left",
+    "imageFit": "contain",
+    "mainElement": {
+      "x": 540,
+      "y": 950,
+      "width": 760,
+      "height": 1140,
+      "anchor": "center",
+      "scale": 1,
+      "opacity": 1
+    },
+    "verticalText": {
+      "width": 760,
+      "height": 100,
+      "rotationDegrees": -90,
+      "fontFamily": "Noto Sans Arabic",
+      "fontSize": 62,
+      "fontWeight": 800,
+      "direction": "rtl",
+      "textAlign": "center",
+      "color": "$palette.onElementText"
+    }
+  },
+  "narrationText": "العباءة إنما جعلت للستر ولم تجعل للزينة، لا يكون فيها زركشة ولا فيها تطريز، وإنما تكون سادة لا تلفت النظر، وتكون أيضاً ضافية، تكون ساترة وتكون فضفاضة وواسعة، ليست عباءة شفافة واسمها عباءة وهي لا تستر، هذا تلاعب.",
+  "wordTimings": [
+    {
+      "index": 1,
+      "text": "العباءة",
+      "segmentId": "scene-01",
+      "startSeconds": 0.0805,
+      "endSeconds": 0.6612,
+      "startFrame": 2,
+      "endFrame": 20
+    },
+    {
+      "index": 2,
+      "text": "إنما",
+      "segmentId": "scene-01",
+      "startSeconds": 0.6716,
+      "endSeconds": 0.9827,
+      "startFrame": 20,
+      "endFrame": 29
+    },
+    {
+      "index": 3,
+      "text": "جعلت",
+      "segmentId": "scene-01",
+      "startSeconds": 0.9931,
+      "endSeconds": 1.356,
+      "startFrame": 30,
+      "endFrame": 41
+    },
+    {
+      "index": 4,
+      "text": "للستر",
+      "segmentId": "scene-01",
+      "startSeconds": 1.3664,
+      "endSeconds": 1.7501,
+      "startFrame": 41,
+      "endFrame": 53
+    },
+    {
+      "index": 5,
+      "text": "ولم",
+      "segmentId": "scene-01",
+      "startSeconds": 1.7605,
+      "endSeconds": 1.9783,
+      "startFrame": 53,
+      "endFrame": 59
+    },
+    {
+      "index": 6,
+      "text": "تجعل",
+      "segmentId": "scene-01",
+      "startSeconds": 1.9886,
+      "endSeconds": 2.2997,
+      "startFrame": 60,
+      "endFrame": 69
+    },
+    {
+      "index": 7,
+      "text": "للزينة",
+      "segmentId": "scene-01",
+      "startSeconds": 2.3101,
+      "endSeconds": 2.7768,
+      "startFrame": 69,
+      "endFrame": 83
+    },
+    {
+      "index": 8,
+      "text": "لا",
+      "segmentId": "scene-02",
+      "startSeconds": 4.0673,
+      "endSeconds": 4.2233,
+      "startFrame": 122,
+      "endFrame": 127
+    },
+    {
+      "index": 9,
+      "text": "يكون",
+      "segmentId": "scene-02",
+      "startSeconds": 4.2319,
+      "endSeconds": 4.5353,
+      "startFrame": 127,
+      "endFrame": 136
+    },
+    {
+      "index": 10,
+      "text": "فيها",
+      "segmentId": "scene-02",
+      "startSeconds": 4.544,
+      "endSeconds": 4.7953,
+      "startFrame": 136,
+      "endFrame": 144
+    },
+    {
+      "index": 11,
+      "text": "زركشة",
+      "segmentId": "scene-02",
+      "startSeconds": 4.804,
+      "endSeconds": 5.2547,
+      "startFrame": 144,
+      "endFrame": 158
+    },
+    {
+      "index": 12,
+      "text": "ولا",
+      "segmentId": "scene-02",
+      "startSeconds": 5.2633,
+      "endSeconds": 5.428,
+      "startFrame": 158,
+      "endFrame": 163
+    },
+    {
+      "index": 13,
+      "text": "فيها",
+      "segmentId": "scene-02",
+      "startSeconds": 5.4367,
+      "endSeconds": 5.688,
+      "startFrame": 163,
+      "endFrame": 171
+    },
+    {
+      "index": 14,
+      "text": "تطريز",
+      "segmentId": "scene-02",
+      "startSeconds": 5.6967,
+      "endSeconds": 6.1907,
+      "startFrame": 171,
+      "endFrame": 186
+    },
+    {
+      "index": 15,
+      "text": "وإنما",
+      "segmentId": "scene-03",
+      "startSeconds": 7.0725,
+      "endSeconds": 7.4931,
+      "startFrame": 212,
+      "endFrame": 225
+    },
+    {
+      "index": 16,
+      "text": "تكون",
+      "segmentId": "scene-03",
+      "startSeconds": 7.5024,
+      "endSeconds": 7.8202,
+      "startFrame": 225,
+      "endFrame": 235
+    },
+    {
+      "index": 17,
+      "text": "سادة",
+      "segmentId": "scene-03",
+      "startSeconds": 7.8296,
+      "endSeconds": 8.2221,
+      "startFrame": 235,
+      "endFrame": 247
+    },
+    {
+      "index": 18,
+      "text": "لا",
+      "segmentId": "scene-03",
+      "startSeconds": 8.2314,
+      "endSeconds": 8.3436,
+      "startFrame": 247,
+      "endFrame": 250
+    },
+    {
+      "index": 19,
+      "text": "تلفت",
+      "segmentId": "scene-03",
+      "startSeconds": 8.3529,
+      "endSeconds": 8.6707,
+      "startFrame": 251,
+      "endFrame": 260
+    },
+    {
+      "index": 20,
+      "text": "النظر",
+      "segmentId": "scene-03",
+      "startSeconds": 8.68,
+      "endSeconds": 9.138,
+      "startFrame": 260,
+      "endFrame": 274
+    },
+    {
+      "index": 21,
+      "text": "وتكون",
+      "segmentId": "scene-04",
+      "startSeconds": 10.0959,
+      "endSeconds": 10.7016,
+      "startFrame": 303,
+      "endFrame": 321
+    },
+    {
+      "index": 22,
+      "text": "أيضاً",
+      "segmentId": "scene-04",
+      "startSeconds": 10.7139,
+      "endSeconds": 11.0971,
+      "startFrame": 321,
+      "endFrame": 333
+    },
+    {
+      "index": 23,
+      "text": "ضافية",
+      "segmentId": "scene-04",
+      "startSeconds": 11.1095,
+      "endSeconds": 11.678,
+      "startFrame": 333,
+      "endFrame": 350
+    },
+    {
+      "index": 24,
+      "text": "تكون",
+      "segmentId": "scene-04",
+      "startSeconds": 11.8881,
+      "endSeconds": 12.3207,
+      "startFrame": 357,
+      "endFrame": 370
+    },
+    {
+      "index": 25,
+      "text": "ساترة",
+      "segmentId": "scene-04",
+      "startSeconds": 12.3331,
+      "endSeconds": 12.9635,
+      "startFrame": 370,
+      "endFrame": 389
+    },
+    {
+      "index": 26,
+      "text": "وتكون",
+      "segmentId": "scene-04",
+      "startSeconds": 12.9758,
+      "endSeconds": 13.5073,
+      "startFrame": 389,
+      "endFrame": 405
+    },
+    {
+      "index": 27,
+      "text": "فضفاضة",
+      "segmentId": "scene-04",
+      "startSeconds": 13.5197,
+      "endSeconds": 14.1995,
+      "startFrame": 406,
+      "endFrame": 426
+    },
+    {
+      "index": 28,
+      "text": "وواسعة",
+      "segmentId": "scene-04",
+      "startSeconds": 14.2119,
+      "endSeconds": 14.9164,
+      "startFrame": 426,
+      "endFrame": 447
+    },
+    {
+      "index": 29,
+      "text": "ليست",
+      "segmentId": "scene-05",
+      "startSeconds": 16.0847,
+      "endSeconds": 16.5209,
+      "startFrame": 483,
+      "endFrame": 496
+    },
+    {
+      "index": 30,
+      "text": "عباءة",
+      "segmentId": "scene-05",
+      "startSeconds": 16.5318,
+      "endSeconds": 17.1208,
+      "startFrame": 496,
+      "endFrame": 514
+    },
+    {
+      "index": 31,
+      "text": "شفافة",
+      "segmentId": "scene-05",
+      "startSeconds": 17.1317,
+      "endSeconds": 17.7425,
+      "startFrame": 514,
+      "endFrame": 532
+    },
+    {
+      "index": 32,
+      "text": "واسمها",
+      "segmentId": "scene-06",
+      "startSeconds": 19.0689,
+      "endSeconds": 19.4685,
+      "startFrame": 572,
+      "endFrame": 584
+    },
+    {
+      "index": 33,
+      "text": "عباءة",
+      "segmentId": "scene-06",
+      "startSeconds": 19.4773,
+      "endSeconds": 19.948,
+      "startFrame": 584,
+      "endFrame": 598
+    },
+    {
+      "index": 34,
+      "text": "وهي",
+      "segmentId": "scene-06",
+      "startSeconds": 19.9568,
+      "endSeconds": 20.1966,
+      "startFrame": 599,
+      "endFrame": 606
+    },
+    {
+      "index": 35,
+      "text": "لا",
+      "segmentId": "scene-06",
+      "startSeconds": 20.2055,
+      "endSeconds": 20.3032,
+      "startFrame": 606,
+      "endFrame": 609
+    },
+    {
+      "index": 36,
+      "text": "تستر",
+      "segmentId": "scene-06",
+      "startSeconds": 20.312,
+      "endSeconds": 20.7205,
+      "startFrame": 609,
+      "endFrame": 622
+    },
+    {
+      "index": 37,
+      "text": "هذا",
+      "segmentId": "scene-06",
+      "startSeconds": 20.8892,
+      "endSeconds": 21.1645,
+      "startFrame": 627,
+      "endFrame": 635
+    },
+    {
+      "index": 38,
+      "text": "تلاعب",
+      "segmentId": "scene-06",
+      "startSeconds": 21.1733,
+      "endSeconds": 21.7061,
+      "startFrame": 635,
+      "endFrame": 651
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01-intro",
+      "label": "العباءة: الستر لا الزينة",
+      "startFrame": 0,
+      "endFrame": 120,
+      "startSeconds": 0,
+      "endSeconds": 4,
+      "background": "$palette.background",
+      "mainElement": {
+        "src": "images/element-01.png",
+        "swapMode": "instant-cut",
+        "position": {
+          "x": 540,
+          "y": 930
+        },
+        "size": {
+          "width": 760,
+          "height": 1140
+        },
+        "scale": {
+          "from": 0.88,
+          "to": 0.91,
+          "interpolation": "smooth-ease"
+        },
+        "opacity": {
+          "from": 1,
+          "to": 1
+        },
+        "imageEvents": [
+          {
+            "id": "swap-to-embroidered-at-03s",
+            "startFrame": 70,
+            "src": "images/element-03.png",
+            "startSeconds": 2.3333333333333335
+          }
+        ]
+      },
+      "verticalText": {
+        "text": "",
+        "visible": false,
+        "position": {
+          "x": 540,
+          "y": 960
+        },
+        "rotationDegrees": -90,
+        "color": "$palette.onElementText"
+      },
+      "wordEvents": [
+        {
+          "id": "wb-01",
+          "text": "العباءة",
+          "startFrame": 3,
+          "endFrame": 120,
+          "startSeconds": 0.1,
+          "endSeconds": 4,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 76,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 866.76,
+            "y": 220
+          },
+          "maxWidth": 289,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-02",
+          "text": "إنما",
+          "startFrame": 21,
+          "endFrame": 120,
+          "startSeconds": 0.7,
+          "endSeconds": 4,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 76,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 654.07,
+            "y": 220
+          },
+          "maxWidth": 192,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-03",
+          "text": "جعلت",
+          "startFrame": 30,
+          "endFrame": 120,
+          "startSeconds": 1,
+          "endSeconds": 4,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 76,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 447.23,
+            "y": 220
+          },
+          "maxWidth": 278,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-04",
+          "text": "للستر",
+          "startFrame": 41,
+          "endFrame": 120,
+          "startSeconds": 1.3666666666666667,
+          "endSeconds": 4,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 76,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 202.53,
+            "y": 220
+          },
+          "maxWidth": 268,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-05",
+          "text": "ولم",
+          "startFrame": 53,
+          "endFrame": 120,
+          "startSeconds": 1.7666666666666666,
+          "endSeconds": 4,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 88,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 797.87,
+            "y": 1650
+          },
+          "maxWidth": 203,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-06",
+          "text": "تجعل",
+          "startFrame": 60,
+          "endFrame": 120,
+          "startSeconds": 2,
+          "endSeconds": 4,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 88,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 582.55,
+            "y": 1650
+          },
+          "maxWidth": 284,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-07",
+          "text": "للزينة",
+          "startFrame": 70,
+          "endFrame": 120,
+          "startSeconds": 2.3333333333333335,
+          "endSeconds": 4,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 88,
+          "fontWeight": 800,
+          "color": "$palette.accent",
+          "position": {
+            "x": 324.69,
+            "y": 1650
+          },
+          "maxWidth": 288,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        }
+      ],
+      "stickerEvents": [
+        {
+          "id": "s1-arrow-to-abaya",
+          "type": "hand-drawn-arrow",
+          "text": "",
+          "emoji": null,
+          "startFrame": 41,
+          "endFrame": 120,
+          "startSeconds": 1.3666666666666667,
+          "endSeconds": 4,
+          "position": {
+            "x": 180,
+            "y": 990
+          },
+          "rotationDegrees": -8,
+          "color": "$palette.sticker",
+          "opacity": {
+            "from": 0,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.55,
+            "toScale": 1,
+            "durationFrames": 10
+          },
+          "sfxName": null,
+          "sfxVolume": 0.2,
+          "pathPoints": [
+            {
+              "x": 0,
+              "y": 80
+            },
+            {
+              "x": 70,
+              "y": 42
+            },
+            {
+              "x": 145,
+              "y": 26
+            },
+            {
+              "x": 210,
+              "y": 0
+            }
+          ],
+          "drawOn": {
+            "enabled": true,
+            "durationFrames": 12
+          }
+        },
+        {
+          "id": "s1-exclamation",
+          "type": "text-sticker",
+          "text": "!!",
+          "emoji": null,
+          "startFrame": 70,
+          "endFrame": 120,
+          "startSeconds": 2.3333333333333335,
+          "endSeconds": 4,
+          "position": {
+            "x": 155,
+            "y": 470
+          },
+          "rotationDegrees": -8,
+          "color": "$palette.accent",
+          "opacity": {
+            "from": 0,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.55,
+            "toScale": 1,
+            "durationFrames": 10
+          },
+          "sfxName": null,
+          "sfxVolume": 0.2
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "s1-pop-title",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 3,
+          "atSeconds": 0.1,
+          "volume": 0.2
+        },
+        {
+          "id": "s1-arrow-whoosh",
+          "name": "whoosh",
+          "src": "audio/sfx/whoosh.wav",
+          "atFrame": 41,
+          "atSeconds": 1.3666666666666667,
+          "volume": 0.2
+        },
+        {
+          "id": "s1-cut-pop",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 70,
+          "atSeconds": 2.3333333333333335,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "scene-02-decoration",
+      "label": "الزركشة والتطريز",
+      "startFrame": 120,
+      "endFrame": 210,
+      "startSeconds": 4,
+      "endSeconds": 7,
+      "background": "$palette.background",
+      "mainElement": {
+        "src": "images/element-01.png",
+        "swapMode": "instant-cut",
+        "position": {
+          "x": 285,
+          "y": 955
+        },
+        "size": {
+          "width": 530,
+          "height": 850
+        },
+        "scale": {
+          "from": 0.96,
+          "to": 1,
+          "interpolation": "smooth-ease"
+        },
+        "opacity": {
+          "from": 1,
+          "to": 1
+        },
+        "imageEvents": [
+          {
+            "id": "swap-to-black-brocade-at-05s",
+            "startFrame": 145,
+            "src": "images/element-02.png",
+            "startSeconds": 4.833333333333333
+          },
+          {
+            "id": "swap-to-embroidered-at-06s",
+            "startFrame": 171,
+            "src": "images/element-03.png",
+            "startSeconds": 5.7
+          }
+        ]
+      },
+      "verticalText": {
+        "text": "",
+        "visible": false,
+        "position": {
+          "x": 540,
+          "y": 960
+        },
+        "rotationDegrees": -90,
+        "color": "$palette.onElementText"
+      },
+      "wordEvents": [
+        {
+          "id": "wb-08",
+          "text": "لا",
+          "startFrame": 123,
+          "endFrame": 210,
+          "startSeconds": 4.1,
+          "endSeconds": 7,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 61,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 965.55,
+            "y": 690
+          },
+          "maxWidth": 140,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-09",
+          "text": "يكون",
+          "startFrame": 127,
+          "endFrame": 210,
+          "startSeconds": 4.233333333333333,
+          "endSeconds": 7,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 61,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 821.91,
+            "y": 690
+          },
+          "maxWidth": 203,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-10",
+          "text": "فيها",
+          "startFrame": 137,
+          "endFrame": 210,
+          "startSeconds": 4.566666666666666,
+          "endSeconds": 7,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 61,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 656.36,
+            "y": 690
+          },
+          "maxWidth": 184,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-11",
+          "text": "زركشة",
+          "startFrame": 145,
+          "endFrame": 210,
+          "startSeconds": 4.833333333333333,
+          "endSeconds": 7,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 86,
+          "fontWeight": 800,
+          "color": "$palette.accent",
+          "position": {
+            "x": 800,
+            "y": 930
+          },
+          "maxWidth": 321,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-12",
+          "text": "ولا",
+          "startFrame": 158,
+          "endFrame": 210,
+          "startSeconds": 5.266666666666667,
+          "endSeconds": 7,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 70,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 886.3,
+            "y": 1180
+          },
+          "maxWidth": 151,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-13",
+          "text": "فيها",
+          "startFrame": 164,
+          "endFrame": 210,
+          "startSeconds": 5.466666666666667,
+          "endSeconds": 7,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 70,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 738.3,
+            "y": 1180
+          },
+          "maxWidth": 201,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-14",
+          "text": "تطريز",
+          "startFrame": 171,
+          "endFrame": 210,
+          "startSeconds": 5.7,
+          "endSeconds": 7,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 86,
+          "fontWeight": 800,
+          "color": "$palette.accent",
+          "position": {
+            "x": 800,
+            "y": 1430
+          },
+          "maxWidth": 281,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        }
+      ],
+      "stickerEvents": [
+        {
+          "id": "s2-dotted-curved-arrow",
+          "type": "hand-drawn-arrow",
+          "text": "",
+          "emoji": null,
+          "startFrame": 145,
+          "endFrame": 210,
+          "startSeconds": 4.833333333333333,
+          "endSeconds": 7,
+          "position": {
+            "x": 525,
+            "y": 670
+          },
+          "rotationDegrees": 0,
+          "color": "$palette.primaryText",
+          "opacity": {
+            "from": 0,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.55,
+            "toScale": 1,
+            "durationFrames": 10
+          },
+          "sfxName": null,
+          "sfxVolume": 0.2,
+          "pathPoints": [
+            {
+              "x": 0,
+              "y": 100
+            },
+            {
+              "x": 80,
+              "y": 0
+            },
+            {
+              "x": 175,
+              "y": 20
+            }
+          ],
+          "dashed": true,
+          "curved": true,
+          "drawOn": {
+            "enabled": true,
+            "durationFrames": 12
+          }
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "s2-brocade-pop",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 145,
+          "atSeconds": 4.833333333333333,
+          "volume": 0.2
+        },
+        {
+          "id": "s2-embroidered-whoosh",
+          "name": "whoosh",
+          "src": "audio/sfx/whoosh.wav",
+          "atFrame": 171,
+          "atSeconds": 5.7,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "scene-03-simple",
+      "label": "تكون سادة لا تلفت النظر",
+      "startFrame": 210,
+      "endFrame": 300,
+      "startSeconds": 7,
+      "endSeconds": 10,
+      "background": "$palette.background",
+      "mainElement": {
+        "src": "images/element-01.png",
+        "swapMode": "instant-cut",
+        "position": {
+          "x": 540,
+          "y": 930
+        },
+        "size": {
+          "width": 760,
+          "height": 1140
+        },
+        "scale": {
+          "from": 0.88,
+          "to": 0.91,
+          "interpolation": "smooth-ease"
+        },
+        "opacity": {
+          "from": 1,
+          "to": 1
+        },
+        "imageEvents": []
+      },
+      "verticalText": {
+        "text": "لا تلفــــت النظــــر !",
+        "visible": false,
+        "position": {
+          "x": 540,
+          "y": 930
+        },
+        "rotationDegrees": -90,
+        "fontFamily": "Noto Sans Arabic",
+        "fontSize": 62,
+        "fontWeight": 800,
+        "color": "$palette.onElementText",
+        "opacity": {
+          "from": 0,
+          "to": 1
+        }
+      },
+      "wordEvents": [
+        {
+          "id": "wb-15",
+          "text": "وإنما",
+          "startFrame": 213,
+          "endFrame": 300,
+          "startSeconds": 7.1,
+          "endSeconds": 10,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 84,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 773.15,
+            "y": 230
+          },
+          "maxWidth": 248,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-16",
+          "text": "تكون",
+          "startFrame": 226,
+          "endFrame": 300,
+          "startSeconds": 7.533333333333333,
+          "endSeconds": 10,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 84,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 550.25,
+            "y": 230
+          },
+          "maxWidth": 254,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-17",
+          "text": "سادة",
+          "startFrame": 235,
+          "endFrame": 300,
+          "startSeconds": 7.833333333333333,
+          "endSeconds": 10,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 84,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 317.1,
+            "y": 230
+          },
+          "maxWidth": 269,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-18",
+          "text": "لا",
+          "startFrame": 247,
+          "endFrame": 300,
+          "startSeconds": 8.233333333333333,
+          "endSeconds": 10,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 86,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 782.55,
+            "y": 1640
+          },
+          "maxWidth": 140,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-19",
+          "text": "تلفت",
+          "startFrame": 251,
+          "endFrame": 300,
+          "startSeconds": 8.366666666666667,
+          "endSeconds": 10,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 86,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 601.06,
+            "y": 1640
+          },
+          "maxWidth": 279,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-20",
+          "text": "النظر",
+          "startFrame": 261,
+          "endFrame": 300,
+          "startSeconds": 8.7,
+          "endSeconds": 10,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 86,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 358.52,
+            "y": 1640
+          },
+          "maxWidth": 262,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        }
+      ],
+      "stickerEvents": [
+        {
+          "id": "s3-eyes",
+          "type": "emoji",
+          "text": "",
+          "emoji": "👀",
+          "startFrame": 261,
+          "endFrame": 300,
+          "startSeconds": 8.7,
+          "endSeconds": 10,
+          "position": {
+            "x": 900,
+            "y": 710
+          },
+          "rotationDegrees": 0,
+          "color": "$palette.accent",
+          "opacity": {
+            "from": 0,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.55,
+            "toScale": 1,
+            "durationFrames": 10
+          },
+          "sfxName": null,
+          "sfxVolume": 0.2
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "s3-eyes-pop",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 261,
+          "atSeconds": 8.7,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "scene-04-qualities",
+      "label": "ضافية، ساترة، فضفاضة، واسعة",
+      "startFrame": 300,
+      "endFrame": 480,
+      "startSeconds": 10,
+      "endSeconds": 16,
+      "background": "$palette.background",
+      "mainElement": {
+        "src": "images/element-01.png",
+        "swapMode": "instant-cut",
+        "position": {
+          "from": {
+            "x": 540,
+            "y": 1320
+          },
+          "to": {
+            "x": 540,
+            "y": 1400
+          }
+        },
+        "size": {
+          "width": 780,
+          "height": 1170
+        },
+        "scale": {
+          "from": 0.64,
+          "to": 0.6,
+          "interpolation": "smooth-ease"
+        },
+        "opacity": {
+          "from": 1,
+          "to": 1
+        },
+        "imageEvents": []
+      },
+      "verticalText": {
+        "text": "",
+        "visible": false,
+        "position": {
+          "x": 540,
+          "y": 960
+        },
+        "rotationDegrees": -90,
+        "color": "$palette.onElementText"
+      },
+      "wordEvents": [
+        {
+          "id": "wb-21",
+          "text": "وتكون",
+          "startFrame": 303,
+          "endFrame": 480,
+          "startSeconds": 10.1,
+          "endSeconds": 16,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 72,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 633.97,
+            "y": 180
+          },
+          "maxWidth": 264,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-22",
+          "text": "أيضاً",
+          "startFrame": 322,
+          "endFrame": 480,
+          "startSeconds": 10.733333333333333,
+          "endSeconds": 16,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 72,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 421.8,
+            "y": 180
+          },
+          "maxWidth": 216,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-23",
+          "text": "ضافية",
+          "startFrame": 334,
+          "endFrame": 480,
+          "startSeconds": 11.133333333333333,
+          "endSeconds": 16,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 92,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 540,
+            "y": 345
+          },
+          "maxWidth": 334,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-24",
+          "text": "تكون",
+          "startFrame": 357,
+          "endFrame": 480,
+          "startSeconds": 11.9,
+          "endSeconds": 16,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 92,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 681.74,
+            "y": 510
+          },
+          "maxWidth": 271,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-25",
+          "text": "ساترة",
+          "startFrame": 370,
+          "endFrame": 480,
+          "startSeconds": 12.333333333333334,
+          "endSeconds": 16,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 92,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 418.48,
+            "y": 510
+          },
+          "maxWidth": 311,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-26",
+          "text": "وتكون",
+          "startFrame": 390,
+          "endFrame": 480,
+          "startSeconds": 13,
+          "endSeconds": 16,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 92,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 745.46,
+            "y": 675
+          },
+          "maxWidth": 318,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-27",
+          "text": "فضفاضة",
+          "startFrame": 406,
+          "endFrame": 480,
+          "startSeconds": 13.533333333333333,
+          "endSeconds": 16,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 92,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 394.8,
+            "y": 675
+          },
+          "maxWidth": 439,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-28",
+          "text": "وواسعة",
+          "startFrame": 427,
+          "endFrame": 480,
+          "startSeconds": 14.233333333333333,
+          "endSeconds": 16,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 92,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 540,
+            "y": 840
+          },
+          "maxWidth": 389,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        }
+      ],
+      "stickerEvents": [
+        {
+          "id": "s4-quality-pop",
+          "type": "text-sticker",
+          "text": "✓",
+          "emoji": null,
+          "startFrame": 427,
+          "endFrame": 480,
+          "startSeconds": 14.233333333333333,
+          "endSeconds": 16,
+          "position": {
+            "x": 880,
+            "y": 840
+          },
+          "rotationDegrees": 8,
+          "color": "$palette.accent",
+          "opacity": {
+            "from": 0,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.55,
+            "toScale": 1,
+            "durationFrames": 10
+          },
+          "sfxName": null,
+          "sfxVolume": 0.2
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "s4-dafiya-pop",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 334,
+          "atSeconds": 11.133333333333333,
+          "volume": 0.2
+        },
+        {
+          "id": "s4-satira-pop",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 370,
+          "atSeconds": 12.333333333333334,
+          "volume": 0.2
+        },
+        {
+          "id": "s4-fafdafa-pop",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 406,
+          "atSeconds": 13.533333333333333,
+          "volume": 0.2
+        },
+        {
+          "id": "s4-wasia-pop",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 427,
+          "atSeconds": 14.233333333333333,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "scene-05-transparency",
+      "label": "ليست عباءة شفافة",
+      "startFrame": 480,
+      "endFrame": 570,
+      "startSeconds": 16,
+      "endSeconds": 19,
+      "background": "$palette.background",
+      "mainElement": {
+        "src": "images/element-01.png",
+        "swapMode": "instant-cut",
+        "position": {
+          "x": 540,
+          "y": 930
+        },
+        "size": {
+          "width": 760,
+          "height": 1140
+        },
+        "scale": {
+          "from": 0.88,
+          "to": 0.91,
+          "interpolation": "smooth-ease"
+        },
+        "opacity": {
+          "from": 1,
+          "to": 1
+        },
+        "imageEvents": [
+          {
+            "id": "swap-to-sheer-embroidered-at-17s",
+            "startFrame": 514,
+            "src": "images/element-04.png",
+            "startSeconds": 17.133333333333333
+          }
+        ]
+      },
+      "verticalText": {
+        "text": "",
+        "visible": false,
+        "position": {
+          "x": 540,
+          "y": 960
+        },
+        "rotationDegrees": -90,
+        "color": "$palette.onElementText"
+      },
+      "wordEvents": [
+        {
+          "id": "wb-29",
+          "text": "ليست",
+          "startFrame": 483,
+          "endFrame": 570,
+          "startSeconds": 16.1,
+          "endSeconds": 19,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 86,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 659.73,
+            "y": 235
+          },
+          "maxWidth": 325,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-30",
+          "text": "عباءة",
+          "startFrame": 496,
+          "endFrame": 570,
+          "startSeconds": 16.533333333333335,
+          "endSeconds": 19,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 86,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 391.51,
+            "y": 235
+          },
+          "maxWidth": 267,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-31",
+          "text": "شفافة",
+          "startFrame": 514,
+          "endFrame": 570,
+          "startSeconds": 17.133333333333333,
+          "endSeconds": 19,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 105,
+          "fontWeight": 800,
+          "color": "$palette.accent",
+          "position": {
+            "x": 540,
+            "y": 1650
+          },
+          "maxWidth": 382,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        }
+      ],
+      "stickerEvents": [
+        {
+          "id": "s5-double-exclamation",
+          "type": "text-sticker",
+          "text": "!!",
+          "emoji": null,
+          "startFrame": 514,
+          "endFrame": 570,
+          "startSeconds": 17.133333333333333,
+          "endSeconds": 19,
+          "position": {
+            "x": 900,
+            "y": 1650
+          },
+          "rotationDegrees": 8,
+          "color": "$palette.accent",
+          "opacity": {
+            "from": 0,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.55,
+            "toScale": 1,
+            "durationFrames": 10
+          },
+          "sfxName": null,
+          "sfxVolume": 0.2
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "s5-sheer-cut",
+          "name": "whoosh",
+          "src": "audio/sfx/whoosh.wav",
+          "atFrame": 514,
+          "atSeconds": 17.133333333333333,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "scene-06-closing",
+      "label": "هذا تلاعب",
+      "startFrame": 570,
+      "endFrame": 670,
+      "startSeconds": 19,
+      "endSeconds": 22.333333333333332,
+      "background": "$palette.background",
+      "mainElement": {
+        "src": "images/element-04.png",
+        "swapMode": "instant-cut",
+        "position": {
+          "x": 540,
+          "y": 1000
+        },
+        "size": {
+          "width": 780,
+          "height": 1170
+        },
+        "scale": {
+          "from": 0.8,
+          "to": 0.76,
+          "interpolation": "smooth-ease"
+        },
+        "opacity": {
+          "keyframes": [
+            {
+              "frame": 570,
+              "value": 1
+            },
+            {
+              "frame": 615,
+              "value": 0.4
+            },
+            {
+              "frame": 670,
+              "value": 0.4
+            }
+          ]
+        },
+        "imageEvents": []
+      },
+      "verticalText": {
+        "text": "",
+        "visible": false,
+        "position": {
+          "x": 540,
+          "y": 960
+        },
+        "rotationDegrees": -90,
+        "color": "$palette.onElementText"
+      },
+      "wordEvents": [
+        {
+          "id": "wb-32",
+          "text": "واسمها",
+          "startFrame": 573,
+          "endFrame": 670,
+          "startSeconds": 19.1,
+          "endSeconds": 22.333333333333332,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 85,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 658.58,
+            "y": 210
+          },
+          "maxWidth": 357,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-33",
+          "text": "عباءة",
+          "startFrame": 585,
+          "endFrame": 670,
+          "startSeconds": 19.5,
+          "endSeconds": 22.333333333333332,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 85,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 375.7,
+            "y": 210
+          },
+          "maxWidth": 265,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-34",
+          "text": "وهي",
+          "startFrame": 599,
+          "endFrame": 670,
+          "startSeconds": 19.966666666666665,
+          "endSeconds": 22.333333333333332,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 85,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 715.77,
+            "y": 405
+          },
+          "maxWidth": 239,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-35",
+          "text": "لا",
+          "startFrame": 607,
+          "endFrame": 670,
+          "startSeconds": 20.233333333333334,
+          "endSeconds": 22.333333333333332,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 85,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 554.02,
+            "y": 405
+          },
+          "maxWidth": 140,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-36",
+          "text": "تستر",
+          "startFrame": 610,
+          "endFrame": 670,
+          "startSeconds": 20.333333333333332,
+          "endSeconds": 22.333333333333332,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 85,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 378.26,
+            "y": 405
+          },
+          "maxWidth": 268,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-37",
+          "text": "هذا",
+          "startFrame": 627,
+          "endFrame": 670,
+          "startSeconds": 20.9,
+          "endSeconds": 22.333333333333332,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 108,
+          "fontWeight": 800,
+          "color": "$palette.primaryText",
+          "position": {
+            "x": 712.73,
+            "y": 1640
+          },
+          "maxWidth": 236,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        },
+        {
+          "id": "wb-38",
+          "text": "تلاعب",
+          "startFrame": 636,
+          "endFrame": 670,
+          "startSeconds": 21.2,
+          "endSeconds": 22.333333333333332,
+          "fontFamily": "Noto Sans Arabic",
+          "fontSize": 108,
+          "fontWeight": 800,
+          "color": "$palette.accent",
+          "position": {
+            "x": 436.05,
+            "y": 1640
+          },
+          "maxWidth": 373,
+          "textAlign": "center",
+          "opacity": {
+            "from": 1,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.94,
+            "toScale": 1
+          }
+        }
+      ],
+      "stickerEvents": [
+        {
+          "id": "s6-final-rays",
+          "type": "text-sticker",
+          "text": "✦",
+          "emoji": null,
+          "startFrame": 636,
+          "endFrame": 670,
+          "startSeconds": 21.2,
+          "endSeconds": 22.333333333333332,
+          "position": {
+            "x": 920,
+            "y": 1640
+          },
+          "rotationDegrees": 12,
+          "color": "$palette.accent",
+          "opacity": {
+            "from": 0,
+            "to": 1
+          },
+          "entry": {
+            "type": "spring-pop",
+            "fromScale": 0.55,
+            "toScale": 1,
+            "durationFrames": 10
+          },
+          "sfxName": null,
+          "sfxVolume": 0.2
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "s6-final-pop",
+          "name": "pop",
+          "src": "audio/sfx/pop.wav",
+          "atFrame": 636,
+          "atSeconds": 21.2,
+          "volume": 0.2
+        }
+      ]
+    }
+  ]
+}

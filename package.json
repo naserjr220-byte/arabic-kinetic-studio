@@ -1,0 +1,24 @@
+{
+  "name": "arabic-kinetic-studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "python scripts/check.py",
+    "mix": "python scripts/mix_audio.py",
+    "render": "remotion render src/index.ts ArabicKineticTypography out/final-video.mp4",
+    "validate": "python scripts/check.py --video out/final-video.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.546",
+    "remotion": "4.0.546",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "typescript": "5.7.3"
+  }
+}

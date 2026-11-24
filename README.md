@@ -1,3 +1,7 @@
 # Arabic Kinetic Studio
 
-Independent Arabic kinetic typography production project. Remotion, React, TypeScript, Python and FFmpeg. Initial abaya demonstration uses the verified source narration and WordBoundary metadata.
+مشروع مستقل لفيديوهات عربية حركية باستخدام Remotion وReact وTypeScript. المثال الأول: 38 كلمة و23 حدثًا دلاليًا و670 إطارًا. المخطط المعدل يعتمد على WordBoundary للصوت الأصلي، مع إصلاح توزيع المشهد الرابع وفجوات المشاهد.
+
+تشغيل: Actions → Render Arabic Kinetic Studio. يتم جلب ملف WAV الأصلي مرة واحدة من الالتزام المثبت والتحقق من SHA-256 ثم تخزينه محليًا داخل المستودع بعد نجاح التصيير. بقية الأصول موجودة في المستودع. لا يعاد توليد الصوت لهذا المثال.
+
+ملفات reference تحتوي على المخطط الأصلي وتقرير التزامن. هذا المثال ليس مولدًا عامًا لجميع النصوص بعد. لا تعتمد نسخة للنشر قبل فحص MP4 بصريًا وصوتيًا.
